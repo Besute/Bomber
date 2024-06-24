@@ -1,0 +1,33 @@
+@import fonts.sass
+
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+html
+    font-size: 62.5%
+    padding-top: 3.5rem
+body
+    background: #020202
+.background-decoration 
+    
+.navigation-menu
+    height: 10rem
+    width: 100%
+    &__container
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+    &__item
+        &_1, &_2
+            a:visited, a:link
+                text-decoration: none
+                font-family: 'Avengeance'
+                color: white
+                font-weight: 500
+                font-style: normal
+                transition: all .1s
+            .online
+                font-size: 2.2rem
+            .offline
+                font-size: 1.8rem

@@ -1,10 +1,10 @@
 {
-  "name": "tour",
+  "name": "Bomber",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "node src/js/mySQL.js"
+    "start": "react-scripts start"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +12,7 @@
     "browser-sync": "^2.26.5",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.2.0",
     "gulp-cli": "^2.2.0",
     "gulp-htmlmin": "^5.0.1",
@@ -27,7 +28,8 @@
     "not dead"
   ],
   "dependencies": {
+    "@babel/plugin-syntax-jsx": "^7.24.7",
     "cors": "^2.8.5",
-    "mysql": "^2.18.1"
+    "gulp-jsx": "^2.0.1"
   }
 }
