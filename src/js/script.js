@@ -30,17 +30,17 @@ const Pages = function() {
 }
 const Bomber = function () {
     const [val, setValue] = React.useState(50)
-    // React.useEffect(() => {
-    //   fetch("http://localhost:4000/", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-type": "application/json; charset=UTF-8"
-    //     },
-    //     body: JSON.stringify({
-    //       val: val
-    //     }),
-    //   });
-    // }, [val])
+    React.useEffect(() => {
+      fetch("http://localhost:4000/", {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json; charset=UTF-8"
+        },
+        body: JSON.stringify({
+          val: val
+        }),
+      });
+    }, [val])
     return (
         <form className='form'>
             <input type='text' className='form__input' id='phone' name='phone' placeholder='ENTER TARGET NUMBER...'/>
