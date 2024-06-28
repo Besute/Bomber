@@ -8,7 +8,7 @@ app.post(`/`, (req, res) => {
   let {val} = req.body
   mass[0] = val
   app.get(`/`, (_, res) => {
-    res.send({val: mass[0]})
+    res.json({val: mass[0]})
     mass[0] = 0
   })
   res.status(204).send()
