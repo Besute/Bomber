@@ -20,7 +20,7 @@ const Pages = function() {
             <h2 className='pages_introduction__header'>USAGE</h2>
             <ol className='pages_introduction__mainText'>
               <li className='pages_introduction__text'>Choose a target number.</li>
-              <li className='pages_introduction__text'>Set the desired power of the messages.</li>
+              <li className='pages_introduction__text'>Set the desired message to attack.</li>
               <li className='pages_introduction__text'>Click 'Launch' to start sending the messages.</li>
             </ol>
           </div>
@@ -43,7 +43,7 @@ const Bomber = function () {
     }, [val])
     return (
         <form className='form'>
-            <input type='text' className='form__input' id='phone' name='phone' placeholder='ENTER TARGET NUMBER...'/>
+            <input type='text' className='form__input' id='phone' name='phone' placeholder='ENTER YOUR MESSAGE'/>
             <div className='form__range'>
               <label className='form__label form__label_1' for='power'>CHOOSE AMOUNT OF MESSAGES</label>
               <label className='form__label form__label_2' for='power'>1</label>
