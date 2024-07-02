@@ -37,9 +37,11 @@ const Bomber = function () {
           "Content-type": "application/json; charset=UTF-8"
         },
         body: JSON.stringify({
-          val: val
+          size: val,
+          message: document.querySelector('.form__input').value,
         }),
       });
+      document.querySelector('.form__input').value = ''
     }, [val])
     return (
         <form className='form'>

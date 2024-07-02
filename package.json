@@ -31,6 +31,7 @@
     "@babel/plugin-syntax-jsx": "^7.24.7",
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "gulp-jsx": "^2.0.1"
+    "gulp-jsx": "^2.0.1",
+    "python-shell": "^5.0.0"
   }
 }
